@@ -20,7 +20,7 @@ app = Flask(__name__)
 # POST＝受け渡す(フォームなどを送信した場合)　GET＝もらう(サイトにアクセスする場合)
 def index():
     if request.method == 'GET':
-        posts = "小吉"
+        posts = "大吉"
     #     # リクエストを送った時のメソッドがGETの場合
     #     posts = Post.query.all()
     #     # すべてのデータを取得
