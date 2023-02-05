@@ -2,6 +2,7 @@
 from datetime import datetime
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
+import random
 # render_templateはhtmlファイルを読み込む為のモジュール
 app = Flask(__name__)
 # アプリケーションのインスタンス化
@@ -19,25 +20,13 @@ app = Flask(__name__)
 # ホームページのルート GETとPOSTを受け付ける
 # POST＝受け渡す(フォームなどを送信した場合)　GET＝もらう(サイトにアクセスする場合)
 def index():
-    if request.method == 'GET':
-        posts = "大吉"
+        request.method == 'GET'
+        kuji = ["大吉","中吉","小吉","吉","凶","大凶"]
+        posts = print(random.choice(kuji))
     #     # リクエストを送った時のメソッドがGETの場合
     #     posts = Post.query.all()
     #     # すべてのデータを取得
         return render_template('index.html', posts=posts)
-    else:
-    #     title = request.form.get('title')
-    #     detail = request.form.get('detail')
-    #     due = request.form.get('due')
-    #     new_post = Post(title=title)
-    #     # create.htmlで送信したnameの情報を取得
-    #     due = datetime.strptime(due, '%Y-%m-%d')
-    #     new_post = Post(title=title, detail=detail, due=due)
-    #     # データベースに追加する準備
-    #     db.session.add(new_post)
-    #     db.session.commit()
-        # add追加・commit保存
-
         return redirect('/')
         # トップページに戻る
 
