@@ -1,6 +1,7 @@
 from turtle import *
 shape("turtle")
 n = int(input('ピラミッドの段数を入力してください。'))
+
 #1段目
 if  n == 1:
  for n in range(3):
