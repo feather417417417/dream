@@ -1,2 +1,2 @@
-C:\Users\Feather\Workspace\dream\hogehoge\test2.py
+C:\Users\Feather\Workspace\dream\hogehoge\test.py
 pause
