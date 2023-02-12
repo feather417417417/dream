@@ -1,11 +1,13 @@
 from turtle import *
 shape("turtle")
 n = int(input('ピラミッドの段数を入力してください。'))
+#1段目
 if  n == 1:
  for n in range(3):
     forward(100)     
     left(120)
 
+#2段目
 elif n == 2:
  for n in range(3):
     forward(50)
@@ -21,6 +23,7 @@ elif n == 2:
     forward(50)
     left(120)
 
+#3段目
 elif n == 3:
  for n in range(3):
    forward(50)
@@ -54,7 +57,8 @@ elif n == 3:
  for n in range(3):
     forward(50)
     left(120)      
-
+    
+#4段目    
 elif n == 4:
  for n in range(3):
    forward(50)
@@ -109,6 +113,7 @@ elif n == 4:
     left(120)    
     continue
 
+#5段目
 elif n == 5:
  for n in range(3):
    forward(50)
