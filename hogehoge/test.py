@@ -172,5 +172,32 @@ elif n == 5:
     continue
  right(180)
  forward(150)
- 
+ left(60)
+ for n in range(4):
+    forward(50)
+    left(120)  
+    continue 
+ forward(50)
+ for n in range(3):
+    forward(50)
+    left(120)   
+    continue 
+ forward(50)
+ for n in range(3):
+    forward(50)
+    left(120)
+    continue 
+ forward(50)
+ for n in range(3):
+    forward(50)
+    left(120)
+    continue 
+ forward(50)
+ for n in range(3):
+    forward(50)
+    left(120)
+    continue 
+ right(180)
+ forward(200)
+  
 done()
