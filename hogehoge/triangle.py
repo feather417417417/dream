@@ -15,16 +15,11 @@ def triangle2(n) :
          
 #1段目
 if  n == 1:
- for n in range(3):
-    forward(100)     
-    left(120)
+  triangle(n)
 
 #2段目
 elif n == 2:
- for n in range(3):
-    forward(50)
-    left(120)
-    continue
+ triangle(n)
  right(120)
  for n in range(4):
     forward(50)
